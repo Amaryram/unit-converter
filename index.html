@@ -12,25 +12,32 @@
 
         <div class="converter-section">
             <h2>Temperature</h2>
-            <input type="number" id="celsius" placeholder="Celsius">
+            <input type="number" id="temp-input" placeholder="Enter value">
+            <select id="temp-direction">
+                <option value="celsiusToFahrenheit">Celsius → Fahrenheit</option>
+                <option value="fahrenheitToCelsius">Fahrenheit → Celsius</option>
+            </select>
             <button onclick="convertTemp()">Convert</button>
             <p id="temp-result" class="result"></p>
         </div>
 
         <div class="converter-section">
             <h2>Distance</h2>
-            <input type="number" id="kilometres" placeholder="Kilometres">
+            <input type="number" id="dist-input" placeholder="Enter value">
+            <select id="dist-direction">
+                <option value="kmToMiles">Kilometres → Miles</option>
+                <option value="milesToKm">Miles → Kilometres</option>
+            </select>
             <button onclick="convertDistance()">Convert</button>
             <p id="dist-result" class="result"></p>
         </div>
 
         <div class="converter-section">
             <h2>Weight</h2>
-            <input type="number" id="kilograms" placeholder="Kilograms">
+            <input type="number" id="weight-input" placeholder="Enter value">
+            <select id="weight-direction">
+                <option value="kgToLbs">Kilograms → Pounds</option>
+                <option value="lbsToKg">Pounds → Kilograms</option>
+            </select>
             <button onclick="convertWeight()">Convert</button>
-            <p id="weight-result" class="result"></p>
-        </div>
-    </div>
-    <script src="converter.js"></script>
-</body>
-</html>
+            <p id="weight-result"
