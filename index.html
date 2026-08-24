@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+
+        <div class="converter-section">
+            <h2>Temperature</h2>
+            <input type="number" id="celsius" placeholder="Celsius">
+            <button onclick="convertTemp()">Convert</button>
+            <p id="temp-result" class="result"></p>
+        </div>
+
+        <div class="converter-section">
+            <h2>Distance</h2>
+            <input type="number" id="kilometres" placeholder="Kilometres">
+            <button onclick="convertDistance()">Convert</button>
+            <p id="dist-result" class="result"></p>
+        </div>
+
+        <div class="converter-section">
+            <h2>Weight</h2>
+            <input type="number" id="kilograms" placeholder="Kilograms">
+            <button onclick="convertWeight()">Convert</button>
+            <p id="weight-result" class="result"></p>
+        </div>
+    </div>
+    <script src="converter.js"></script>
+</body>
+</html>
